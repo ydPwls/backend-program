@@ -22,4 +22,5 @@ public class Member {
     // 회원 관리 API 실습
     // @Column(name="email", updatable = false)
     private String  email;
+
 }
