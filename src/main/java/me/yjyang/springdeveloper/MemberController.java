@@ -31,7 +31,7 @@ public class MemberController {
     }
 
     // 회원 정보를 등록하는 요청 | 260928
-    // http:localhos:8080/member 요청을 post방식으로 했을 떄 회원 등록을 처리하도록 구현
+    // http:localhost:8080/member 요청을 post방식으로 했을 떄 회원 등록을 처리하도록 구현
     @PostMapping("/member")
     public ResponseEntity<Member> createMember(@RequestBody Member member) {
         // 비즈니스 로직 호출 (Service에 구현)
