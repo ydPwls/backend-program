@@ -16,6 +16,7 @@ public class Member {
 
     @Column(name="id", updatable = false)
     private Long id;
+
     @Column(name="name",nullable = false) // null값 불허
     private String name;
 
@@ -23,4 +24,8 @@ public class Member {
     // @Column(name="email", updatable = false)
     private String  email;
 
+    // 이름만 받는 인자 생성 | 1008
+    public Member(String name) {
+        this.name = name;
+    }
 }
