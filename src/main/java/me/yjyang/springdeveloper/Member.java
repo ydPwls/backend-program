@@ -1,10 +1,7 @@
 package me.yjyang.springdeveloper;
 
 import jakarta.persistence.*;
-import lombok.AccessLevel;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @AllArgsConstructor
@@ -18,6 +15,7 @@ public class Member {
     private Long id;
 
     @Column(name="name",nullable = false) // null값 불허
+    @Setter(AccessLevel.PUBLIC)
     private String name;
 
     // 회원 관리 API 실습
@@ -28,4 +26,5 @@ public class Member {
     public Member(String name) {
         this.name = name;
     }
+
 }
